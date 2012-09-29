@@ -2,6 +2,7 @@
 package jp.coffee_club.tco;
 
 import android.os.AsyncTask;
+import android.util.Log;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -113,8 +114,6 @@ public class RedirectChecker extends AsyncTask<String, Void, ResultParam> {
      * @param msg
      */
     private void debuglog(String msg) {
-        if (BuildConfig.DEBUG) {
-            android.util.Log.d(TAG, msg);
-        }
+        Log.d(TAG, msg);
     }
 }
