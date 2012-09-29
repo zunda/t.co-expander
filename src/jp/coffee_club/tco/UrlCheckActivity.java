@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.util.regex.Pattern;
@@ -146,8 +147,6 @@ public class UrlCheckActivity extends Activity
      * @param msg
      */
     private void debuglog(String msg) {
-        if (BuildConfig.DEBUG) {
-            android.util.Log.d(TAG, msg);
-        }
+        Log.d(TAG, msg);
     }
 }
